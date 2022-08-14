@@ -1,0 +1,19 @@
+h1{
+    color: #560bad;
+}
+
+/* vista del link antes y despues de hacerle click */
+a:link, a:visited{
+    background-color: #b5179e;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    /*Para que no sobrepongan los botones*/
+    display: inline-block;
+}
+
+/* vista del link cuando le pase el puntero y cuando se hace click */
+a:hover, a:active{
+    background-color: #f57285;
+}

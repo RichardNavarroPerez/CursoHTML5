@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Inline y Block</title>
+    <link rel="stylesheet" href="css/estiloss7.css">
+</head>
+<body>
+    <h1>SECCIÓN 7: ELEMENTOS INLINE Y BLOCK EN HTML Y MÁS TEMAS</h1>
+    <hr />
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="seccion6.html">ANTERIOR</a></li>
+        <li><a href="seccion8.html">SIGUIENTE</a></li>
+        <li><a href="index.html">CONTACTO</a></li>
+    </ul>
+    <hr />
+
+    <h3 id="Contenido">Contenido</h3>
+    <a href="">7.1. Elementos Inline</a><br />
+    <a href="">7.2. Elementos Block (div)</a><br />
+    <a href="">7.3. Atributo class en HTML y CSS</a><br />
+    <a href="">7.4. Atributo id en HTML y CSS</a><br />
+    <a href="#7.5">7.5. Marcadores o Bookmarks</a><br />
+    <a href="">7.6. iFrames</a><br />
+    <br/>
+
+    <h3>7.1. Elementos Inline</h3>
+    <p>Los elementos de bloque inician en una nueva línea y los elementos 'inline' se aplican dentro de la misma línea, uno al lado de otro</p>
+    <p>
+        Parrafo con ejemplo de lo anterior: <br>
+        Se resaltará la palabra 'enfatizará' y la expresión el 'cambiara el color'<br>
+        Texto donde se <span style="color: #e63946;border: 1px solid black;">enfatizará</span> y <samp style="color: #457b9d;font-weight: bold;">cambiara el color</samp> de algunos elementos. <!-- Font-Weight bold 'Negrita' -->
+    </p>
+
+    <p>Para el caso anterior la etiqueta 'span' es de tipo 'inlane' puesto que aplico sus caracteristicas sobre la misma linea de trabajo, sin crear saltos de línea.</p>
+
+    <h3>7.2. Elementos Block (div)</h3>
+    <div>
+        <h4>Título del DIV</h4>
+        <p>Texto dentro del DIV</p>
+    </div>
+    <p>Texto fuera del DIV</p>
+
+    <h3>7.3. Atributo class en HTML y CSS</h3>
+    <p>'class' es un atributo que permite segmentar etiquetas HTML que pueden tener caracteristicas, estilos y/o comportamientos que se especifiquen sin que las otras etiquetas iguales dentro del todo el código se vean afectadas. Ejemplo con DIV:</p>
+
+    <h2>Lenguajes de Programación</h2>
+    <!-- A una etiqueta se le puede aplicar más de una clase añadiendo espacio y el nombre de la clase-->
+    <!-- EJ: <div class="tarjeta titulo"> -->
+    <div class="tarjeta">
+        <h3 class="cardh1">Java:</h3>
+        <p>Creador: James Gosling</p>
+    </div>
+    <div class="tarjeta">
+        <h3 class="cardh1">Python:</h3>
+        <p>Creador: Guido Van Rossum</p>
+    </div>
+    <div class="tarjeta">
+        <h3 class="cardh1">JavaScript:</h3>
+        <p>Creador: Brendan Eich</p>
+    </div>
+    <div>
+        <h3 class="cardh1">Resumen</h3>
+        <p>Java, Python, JavaScript</p>
+    </div>
+
+    <h3>7.4. Atributo id en HTML y CSS</h3>
+    <p>Para el atributo 'id' aplica el mismo concepto que del atributo 'class' con la diferencia que el nombre de un id solo se debe usar una vez. En caso que se use un 'id' más de una vez, esto no representaría un error en el código y se aplicaría igual las caracteristicas, propiedades y/o estilos HTML especificados. Sin embargo, es muy probable que esto afecte el comportamiento en el navegador cuando se usen tecnologías como CSS3 y muy casi seguro JavaScript.</p>
+    <p>Ejemplo de la sintaxis de 'id':</p>
+    <ul id="lista10">
+        <li>En HTML:    'div id=ejemplo', 'h1 id=ejemplo2'</li>
+        <li>En CSS:     #ejemplo, #ejemplo2</li>
+    </ul>
+
+    <a href="#Contenido"><h3 id="7.5">7.5. Marcadores o Bookmarks</h3></a>
+    <p>Los marcadores o bookmarks son puntos de búsquedas que pueden dejar en cualquier parte del codigo, de manera que, al visitar la página, no se cargaría la parte inicial sino la sección especificada por el marcador y estos marcadores se pueden visitar de manera externa a la pagina como de manera interna. <br> Su uso más conocido es en forma de 'link' en la parte final de la página para que nos lleve al inicio de la misma.</p>
+    <p>
+        La sintaxis para un marcador: <br>
+        <ul>
+            <li>'div id=nombre'</li>
+            <li>'h1 id=nombre2'</li>
+        </ul>
+    <p>Nota: se debe tomar en cuenta que los nombres de los 'id' son camelCase</p>
+    </p>
+    <a href="#Contenido"><h3>7.6. iFrames o Pop-up</h3></a>
+    <p>En HTML están las etiquetas para 'iframe' y 'Pop-up'. Para que se pueda establecer la conexión es necesario que la pagina que se va a invocar permita la visualización en un iFrame o Pop-up.</p>
+    <h4>iFrame</h4>
+    <iframe src="index.html" frameborder="1" class="marco" name="marco1"></iframe>
+    <div id="linkExterno">
+        <a href="http://globalmentoring.com.mx" target="marco1" class="boton">Sitio GlobalMentoring</a>
+    </div>
+</body>
+</html>

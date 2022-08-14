@@ -1,0 +1,42 @@
+ul{
+    list-style-type: none;        /* Para quitar las viñetas */
+    background-color: #457b9d;  /* Para dar color de forndo */
+    overflow: hidden;             /* Para que se muestre la lista de forma independiente al resto del código */
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    float: left; /* Para que los elementos floten hacia la izquierda */
+}
+
+li a {  /*Se puede aplicar estilos a combinaciones de etiquetas especificas */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none; 
+}
+
+li a:hover {
+    background-color: #1d3557;
+}
+
+ol {
+    list-style: none;
+    counter-reset: contador; /* Se indica que la variable sea reseteada con cada lista */
+}
+
+ol li {
+    counter-increment: contador; /* Se indica que en cada lista el contador se auto incremente */
+}
+
+/* ::after y ::before se puede aplicar a cualquier etiqueta */
+ol li::before {
+    content: 'Aqui ' counter(contador) ' - '; /* Se crea una variable llamada 'contador' */
+    color: #ff6f00;
+}
+
+ol li::after {
+    content: '.';
+}

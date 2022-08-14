@@ -1,0 +1,124 @@
+<!-- The HTML code for the page. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="css/estiloss5.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <h1>SECCIÓN 5: INTRODUCCIÓN A HTML CON CSS</h1>
+        <hr/>
+        <p>&nbsp;&nbsp;&nbsp;<a href="index.html">INICIO</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="seccion2.html">ANTERIOR</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="seccion4.html">SIGUIENTE</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">CONTACTO</a>&nbsp;&nbsp;</p>
+        <hr/>
+        <!-- A list of links to other pages. -->
+        <h3>Contenido</h3>
+        <a href="">5.1. Tablas en HTML</a><br/>
+        <a href="">5.2. Tablas en HTML con CSS</a><br/>
+        <a href="">3.3. Cascadeo en las Hojas de Estilo CSS</a><br/>
+        <a href="">3.4. Box Model en CSS</a><br/>
+        <a href="">3.5. Manejo de Padding, Border y Margin en CSS </a><br/>
+        <a href="">3.6. Emjemplo de Paleta de Colores en HTML</a><br/><br/><br/><br/>
+    
+        <h3>5.1. Estados y Colores de los Links</h3>
+        <p style="color:crimson">
+            Establecer los colores por nombres; hay al momento 140 colores definidos en HTML por nombre.
+        </p><br/>
+
+        <h3>5.2. Tablas en HTML con CSS</h3>
+        <table>
+            <tr> <!-- Filas -->
+                <th>Nombre</th> <!-- Celda con formato de encabezado -->
+                <th>Apellido</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Juan</td> <!-- Celda. Si no se indica lo contrario las celdas se colocan una al lado de la otra -->
+                <td>Pérez</td>
+                <td>jperez@mail.com</td>
+            </tr>
+            <tr>
+                <td>Mario</td> <!-- Celda -->
+                <td>González</td>
+                <td>mgonzalez@mail.com</td>
+            </tr>
+            <tr>
+                <td>Pablo</td> <!-- Celda -->
+                <td>Pérez</td>
+                <td>pperez@mail.com</td>
+            </tr>
+        </table>
+        <br/>
+        <h3>5.3. Atributo collspan y rowspan</h3>
+        <p>
+            Collspan agrupa celdas horizontalmente. <br>
+            Rowspan agrupa celdas verticalmente.
+        </p>
+        <table>
+            <tr> <!-- Filas -->
+                <th colspan="2">Nombre</th> <!-- Con esto se tomará dos celdas seguidas en la misma fila -->
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Juan</td> 
+                <td>Pérez</td>
+                <td rowspan="2">jperez@mail.com</td> <!-- Con esto se tomará dos celdas seguidas en la misma columna -->
+            </tr>
+            <tr>
+                <td>Pablo</td>
+                <td>Pérez</td>
+            </tr>
+            <tr>
+                <td>Mario</td> <!-- Celda -->
+                <td>González</td>
+                <td>mgonzalez@mail.com</td>
+            </tr>
+        </table>
+        <br/>
+        <h3>5.4. Estilos CSS a Tablas en HTML</h3>
+        <table>
+            <caption>Listado de Personas</caption>
+            <tr>
+                <th>Nombre</th> 
+                <th>Apellido</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Juan</td> 
+                <td>Pérez</td>
+                <td>jperez@mail.com</td>
+            </tr>
+            <tr>
+                <td>Mario</td>
+                <td>González</td>
+                <td>mgonzalez@mail.com</td>
+            </tr>
+            <tr>
+                <td>Pablo</td> <!-- Celda -->
+                <td>Pérez</td>
+                <td>pperez@mail.com</td>
+            </tr>
+            <tr>
+                <td>Carlos</td> <!-- Celda -->
+                <td>Fulano</td>
+                <td>cfulano@mail.com</td>
+            </tr>
+            <tr>
+                <td>Franco</td> <!-- Celda -->
+                <td>Juarez</td>
+                <td>fjuarez@mail.com</td>
+            </tr>
+            <tr>
+                <td>Pedro</td> <!-- Celda -->
+                <td>Bravo</td>
+                <td>pbravo@mail.com</td>
+            </tr>
+        </table>
+        <br/>    
+    </body>
+</html>

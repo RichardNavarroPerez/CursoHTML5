@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+    <!-- <style>
+        h3{
+            color:white;
+            background-color: crimson;
+        }
+        p{
+            color: crimson;
+        }
+    </style> -->
+    <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body style="background-color: powderblue;">
+    <h1>SECCIÓN 3: INTRODUCCIÓN A HTML CON CSS</h1>
+    <hr/>
+    <p>&nbsp;&nbsp;&nbsp;<a href="index.html">INICIO</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="seccion2.html">ANTERIOR</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="seccion4.html">SIGUIENTE</a>&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="">CONTACTO</a>&nbsp;&nbsp;</p>
+    <hr/>
+    <h3>Contenido</h3>
+    <a href="">3.1. Manejo de Colores en HTML</a><br/>
+    <a href="">3.2. Introducción a CSS</a><br/>
+    <a href="">3.3. Cascadeo en las Hojas de Estilo CSS</a><br/>
+    <a href="">3.4. Box Model en CSS</a><br/>
+    <a href="">3.5. Manejo de Padding, Border y Margin en CSS </a><br/>
+    <a href="">3.6. Emjemplo de Paleta de Colores en HTML</a><br/><br/><br/><br/>
+
+    <h3>3.1. Manejo de Colores en HTML</h3>
+    <p style="color:crimson">
+        Establecer los colores por nombres; hay al momento 140 colores definidos en HTML por nombre.
+    </p>
+
+    <p style="color:rgb(219, 20, 60)">
+        Establecer los colores por código RGB (Rojo, Verde, Azul - Red, Green, Blue)<br/>
+        El código se expresa así rgb(X,X,X) y los posibles valores van de 0 a 255:<br/>
+        Siendo  rgb(0,0,0) negro<br/>
+                rgb(255, 255, 255) blanco <br/>
+                rgb(255, 0, 0) Rojo <br/>
+                rgb(0, 255, 0) Verde <br/>
+                rgb(0, 0, 255) Azul<br/>
+
+        Otros códigos: decimal, HWB
+    </p>
+
+    <p style="color:rgb(219, 20, 60, .5)">
+        Ejemplo de color RGB con transparecia; para la transparecia se debe agregar un valor decimal adicional llamado 'alfa' que va de 0 a 1, siendo cero el valor de la transparecia total y uno la ausencia del misma. Para este caso se aplica 0.5 que es el 50% de transparecia.<br/>
+        Formato 'codigoColor(v1, v2, v3, vAlfa)'<br/>
+        Ejemplo: rgb(219, 20, 60, .5)
+    </p>
+
+    <p style="color:hsla(348, 83%, 47%)">
+        Ejemplo de color HSL; del ingles Hue, Saturation, Lightness (Matiz, Saturación, Intensidad) y sus valores se representan en % para S/L y 0 a 360 para H (hace referencia a una circunferencia); se representa gráficamente como un cono doble o un doble hexágono. Igual se puede aplicar la transparecia.<br/>
+        - Si el matiz es cero el color será rojo, 120 para verde, 240 azul.<br/>
+        - Si la saturación es de 0% el color será gris y el 100% aplicará el color seleccionado (Escala de grises)<br/>
+        - Si la iluminación es de 0% es negro (sin iluminación) y el 100% blanco (máxima iluminación).
+    </p>
+
+    <p>
+        Ejemplo de color Hexagesimal; La base hexagesimal es de 16 valores siendo los posibles valores de 0 a 9 y A hasta F: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.<br/>
+        El formato empieza por # seguido de tres pares de valores, ej: #000000 (negro), tambien #000<br/>
+        #ff0000 - Rojo, tambien #f00<br/>
+        #00ff00 - Verde, tambien #0f0<br/>
+        #0000ff - Azul, tambien #00f<br/>
+        #ffffff - Blanco, tambien #fff
+
+    </p>
+
+    <br/><br/>
+    <h3>3.2. Introducción a CSS</h3>
+    <p>Además de aplicar estilos de manera individual en las etiquetas, tambien se puede aplicar la etiqueta 'style' en el 'head' y de esta manera se aplicara el estilo deseado a todas las etiquetas que sean iguales. Sin embargo, lo mejor es aplicar estos estilos desde un archivo externo. Para esto se añade al 'head' la etiqueta 'link'</p>
+
+</body>
+</html>

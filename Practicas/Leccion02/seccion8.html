@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>SECCIÓN 8: Formularios en HTML</h1>
+    <hr />  
+    <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="seccion6.html">ANTERIOR</a></li>
+        <li><a href="seccion8.html">SIGUIENTE</a></li>
+        <li><a href="index.html">CONTACTO</a></li>
+    </ul>
+    <hr />
+
+    <h3>Contenido</h3>
+    <a href="">8.1. Formularios en HTML</a><br />
+    <a href="">8.2. Validar Formularios</a><br />
+    <a href="">8.3. Método GET y POST HTTP</a><br />
+    <a href="">8.4. Tipo Mail y Number</a><br />
+    <a href="#8.5">8.5. Radiobuttons y Chekboxes</a><br />
+    <a href="">8.6. Fiel y Legend</a><br />
+    <a href="">8.7. Atributos del elemento form</a><br />
+    <a href="">8.8. Validar Formularios</a><br />
+    <a href="">8.9. Más Elementos de Tipo Input</a><br />
+    <a href="">8.10. Formulario Login con HTML</a><br />
+    <a href="#8.11">8.11. Formulario Login con CSS</a><br />
+    <br/>
+    <hr>
+    
+    <h3>8.1. Formularios (Formas) en HTML</h3>
+    <p>Las etiquetas Input son cajas que permiten capturar información de parte del usuario, y con el atributo 'Type' se especifica el tipo de elemento que se va a manejar; por buenas practicas se le debe asignar un 'id' a cada input que se cree.</p>
+    <p>Con el atributo 'value' asigna la expresiónque se muestra en el boton de envio, si esta etiqueta no se toma en cuenta el valor por defecto es 'Enviar'. Sin embargo, el atribito 'value' tambien se le puede asignar un valor que aparecera por decto en un 'input'.</p>
+    <p>Todo 'input' debe estar acompañado por un 'label' porque le dice al usuario que dato se espera capturar.</p>
+    <form method="POST"> <!-- De agregarse el atributo novalidate no se validara ningun campo aunque se hayan requerido -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"/>
+        <br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required="true"/><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required="true"/><br>
+
+        <input type="submit" id="Enviar">
+    </form>
+
+</body>
+</html>
